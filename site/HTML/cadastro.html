@@ -1,0 +1,45 @@
+<html lang="pt-br">
+    <head>
+        
+        <meta charset="UTF-8"/> 
+        <title>Tela de Login</title>
+        <title>Seja bem-vindo</title>
+        
+        
+        <link rel="stylesheet" type="text/css" href="./cadas.css">
+
+        
+        <script src="./Login.js"></script>
+
+       
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    </head>
+    <body>
+        
+
+        <div class="tela-Cadastro">
+            <a href="../index.html">Ir para a página de Login</a>
+        </div>
+
+
+
+        <div class="container-principal">
+          
+            <div class="formulario">
+                <form id="form-login" onsubmit="logar(event)">
+                   
+                    <input type="text" placeholder="Usuário:" id="usuario" required="true" minlength="3" maxlength="15">
+
+                    <input type="email" placeholder="Email:" id="email" required="true" minlength="3" maxlength="40">
+
+                    <input type="password" placeholder="Senha:" id="senha" required="true" minlength="3" maxlength="8">
+
+                   
+                    <input type="submit" value="Criar" onclick="logar();return false;">
+
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
